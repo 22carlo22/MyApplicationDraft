@@ -25,6 +25,7 @@ public class TasksFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        //Extract the views from this fragment and display it
         binding = FragmentTasksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

@@ -16,6 +16,8 @@ import com.example.myapplication.databinding.FragmentTasksBinding;
 
 public class AnalyticFragment extends Fragment {
 
+    //Note: Binding follows a strict naming rule. Ex. if you want AnalyticFragment.class
+    // to access the views from fragment_analytic.xml, the binding class name should be FragmentAnalyticBinding
     private FragmentAnalyticBinding binding;
 
     public AnalyticFragment() {
@@ -27,6 +29,7 @@ public class AnalyticFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        //Extract the views from this fragment and display
         binding = FragmentAnalyticBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

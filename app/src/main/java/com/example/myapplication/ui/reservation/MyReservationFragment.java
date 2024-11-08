@@ -9,9 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapplication.R;
+import com.example.myapplication.databinding.FragmentFindColleagueBinding;
+import com.example.myapplication.databinding.FragmentMyReservationBinding;
 
 public class MyReservationFragment extends Fragment {
 
+    private FragmentMyReservationBinding binding;
 
     public MyReservationFragment() {
         // Required empty public constructor
@@ -21,7 +24,17 @@ public class MyReservationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_reservation, container, false);
+
+        //Extract the views from this fragment and display it
+        binding = FragmentMyReservationBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
+        return root;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

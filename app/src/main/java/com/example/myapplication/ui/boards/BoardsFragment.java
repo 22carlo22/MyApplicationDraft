@@ -17,12 +17,15 @@ public class BoardsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        //Extract the views from this fragment
         binding = FragmentBoardsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        //For prototype only: listen to the "Smart Office Project" button
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Display the other screen, ie. MyBoardActivity
                 Intent intent = new Intent(getActivity(), MyBoardActivity.class);
                 startActivity(intent);
             }

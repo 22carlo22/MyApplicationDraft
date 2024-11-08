@@ -26,6 +26,7 @@ public class DeadlineFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        //Extract the views from this fragment and display
         binding = FragmentDeadlineBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

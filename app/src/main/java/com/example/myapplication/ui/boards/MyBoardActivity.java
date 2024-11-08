@@ -20,21 +20,27 @@ public class MyBoardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Extract the views from this activity and display
         binding = ActivityMyboardBinding.inflate(getLayoutInflater());
         View root = binding.getRoot();
         setContentView(root);
 
+        //Diplay the title of the chosen board
         setTitle("Smart Office Project");
+        //Enable the back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
+        //Set the "lists" fragment as default, and display it
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new TasksFragment()).commit();
+
+        //Listen to the inputs of the bottom navigation
         binding.bottomnavboard.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fr = new DeadlineFragment();
-                int id = item.getItemId();
+                Fragment fr = null;
 
+                //Choose the fragment based on the user input
+                int id = item.getItemId();
                 if(id == R.id.item_tasks) fr = new TasksFragment();
                 else if(id == R.id.item_deadline) fr = new DeadlineFragment();
                 else if(id == R.id.item_analytic) fr = new AnalyticFragment();
