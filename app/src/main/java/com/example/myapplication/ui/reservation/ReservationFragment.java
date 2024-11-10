@@ -39,7 +39,7 @@ public class ReservationFragment extends Fragment {
                 //Set the fragment accordingly
                 int id = item.getItemId();
                 if(id == R.id.item_myR) fr = new MyReservationFragment();
-                else if(id == R.id.item_addR) fr = new NewReservationFragment();
+                else if(id == R.id.item_addR) fr = new Building1Fragment();
                 else if(id == R.id.item_colleague) fr = new FindColleagueFragment();
 
                 getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fr).commit();

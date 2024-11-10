@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.databinding.FragmentReservationBinding;
 
-public class NewReservationFragment extends Fragment {
+public class Building1Fragment extends Fragment {
 
     private FragmentReservationBinding binding;
 
-    public NewReservationFragment() {
+    public Building1Fragment() {
         // Required empty public constructor
     }
 
@@ -28,6 +28,8 @@ public class NewReservationFragment extends Fragment {
 
         return root;
     }
+
+
 
     @Override
     public void onDestroyView() {

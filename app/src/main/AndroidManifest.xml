@@ -16,6 +16,9 @@
             android:name=".ui.boards.MyBoardActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.reservation.ReservationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
