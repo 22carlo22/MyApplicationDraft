@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reservation.ReservationBuilding1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="120dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="120dp">
+
+
+        <TextView
+            android:id="@+id/RoofFloor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/teal_200"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/roof_floor_level"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Building1_Floor7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_building_floor"
+            android:text="@string/floor_7" /> <!-- -->
+
+        <ImageButton
+            android:id="@+id/Building1_Floor6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_building_floor" />
+
+        <ImageButton
+            android:id="@+id/Building1_Floor5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_building_floor" />
+
+        <ImageButton
+            android:id="@+id/Building1_Floor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_building_floor" />
+
+        <ImageButton
+            android:id="@+id/Building1_Floor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_building_floor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@drawable/reservation_building_floor"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/lobby"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

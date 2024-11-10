@@ -12,4 +12,9 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lobby">Lobby</string>
+    <string name="roof_floor_level">Roof Floor Level</string>
+    <string name="fragment_boards_xml">fragment_boards.xml</string>
+    <string name="floor_8">Floor 8</string>
+    <string name="floor_7">Floor 7</string>
 </resources>

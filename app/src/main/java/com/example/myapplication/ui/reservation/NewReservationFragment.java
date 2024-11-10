@@ -8,13 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.R;
-import com.example.myapplication.databinding.FragmentFindColleagueBinding;
-import com.example.myapplication.databinding.FragmentNewReservationBinding;
+import com.example.myapplication.databinding.FragmentReservationBinding;
 
 public class NewReservationFragment extends Fragment {
 
-    private FragmentNewReservationBinding binding;
+    private FragmentReservationBinding binding;
 
     public NewReservationFragment() {
         // Required empty public constructor
@@ -25,7 +23,7 @@ public class NewReservationFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         //Extract the views from this fragment and display it
-        binding = FragmentNewReservationBinding.inflate(inflater, container, false);
+        binding = FragmentReservationBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
