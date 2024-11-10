@@ -17,4 +17,5 @@
     <string name="fragment_boards_xml">fragment_boards.xml</string>
     <string name="floor_8">Floor 8</string>
     <string name="floor_7">Floor 7</string>
+    <string name="main_building_xxx">Main Building XXX</string>
 </resources>
