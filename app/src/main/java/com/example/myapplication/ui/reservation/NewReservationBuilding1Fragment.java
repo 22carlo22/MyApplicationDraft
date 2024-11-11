@@ -8,27 +8,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.databinding.FragmentMyReservationBinding;
+import com.example.myapplication.databinding.FragmentNewReservationBuilding1Binding;
 
-public class MyReservationFragment extends Fragment {
+public class NewReservationBuilding1Fragment extends Fragment {
 
-    private FragmentMyReservationBinding binding;
+    private FragmentNewReservationBuilding1Binding binding;
 
-    public MyReservationFragment() {
+    public NewReservationBuilding1Fragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         //Extract the views from this fragment and display it
-        binding = FragmentMyReservationBinding.inflate(inflater, container, false);
+        binding = FragmentNewReservationBuilding1Binding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
     }
+
+
 
     @Override
     public void onDestroyView() {

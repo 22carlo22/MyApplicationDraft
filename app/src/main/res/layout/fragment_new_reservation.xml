@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.reservation.NewReservationFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -29,8 +30,8 @@
             android:background="@drawable/reservation_building_floor"
             android:text="@string/main_building_xxx" />
 
-        <fragment
-            android:id="@+id/fragment"
+        <FrameLayout
+            android:id="@+id/flFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

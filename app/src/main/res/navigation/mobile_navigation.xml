@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_reservation"
-        android:name="com.example.myapplication.ui.reservation.ReservationFragment"
+        android:name="com.example.myapplication.ui.reservation.ReservationMenuFragment"
         android:label="Reservations"
-        tools:layout="@layout/fragment_reservation" />
+        tools:layout="@layout/fragment_reservationmenu" />
 
     <fragment
         android:id="@+id/nav_notification"

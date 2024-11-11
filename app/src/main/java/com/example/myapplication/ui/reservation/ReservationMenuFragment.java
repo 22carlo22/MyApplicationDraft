@@ -11,14 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapplication.R;
-import com.example.myapplication.databinding.FragmentReservationBinding;
+import com.example.myapplication.databinding.FragmentReservationmenuBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ReservationFragment extends Fragment {
+public class ReservationMenuFragment extends Fragment {
 
-    private FragmentReservationBinding binding;
+    private FragmentReservationmenuBinding binding;
 
-    public ReservationFragment() {
+    public ReservationMenuFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +26,7 @@ public class ReservationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         //Extract the views from this fragment and display it
-        binding = FragmentReservationBinding.inflate(inflater, container, false);
+        binding = FragmentReservationmenuBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         //listen to the inputs of the bottom navigation
@@ -39,7 +39,7 @@ public class ReservationFragment extends Fragment {
                 //Set the fragment accordingly
                 int id = item.getItemId();
                 if(id == R.id.item_myR) fr = new MyReservationFragment();
-                else if(id == R.id.item_addR) fr = new Building1Fragment();
+                else if(id == R.id.item_addR) fr = new NewReservationFragment();
                 else if(id == R.id.item_colleague) fr = new FindColleagueFragment();
 
                 getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fr).commit();
