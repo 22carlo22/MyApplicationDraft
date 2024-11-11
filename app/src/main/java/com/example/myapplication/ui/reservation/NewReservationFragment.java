@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentNewReservationBinding;
@@ -24,28 +26,28 @@ public class NewReservationFragment extends Fragment {
         // Required empty public constructor
     }
 
+    View view;
+    Button newReservation;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstancedState){
+        //return inflater.inflate(R.layout.fragment_new_reservation,parent,false);
+        view = inflater.inflate(R.layout.fragment_new_reservation,parent,false);
+        newReservation = (Button) view.findViewById(R.id.testbutton);
 
-        //Extract the views from this fragment and display it
-        binding = FragmentNewReservationBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        binding.Building1start.setOnClickListener(new View.OnClickListener() {
+        newReservation.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                //Display the other screen, ie. MyBoardActivity
-                Intent intent = new Intent(getActivity(), ReservationActivity.class);
-                startActivity(intent);
+            public void onClick(View v){
+                Toast.makeText(getActivity(),"New Reservation", Toast.LENGTH_LONG).show();
             }
         });
-
-
-        return root;
+        return view;
     }
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstancedState){
+
+    }
 
     @Override
     public void onDestroyView() {

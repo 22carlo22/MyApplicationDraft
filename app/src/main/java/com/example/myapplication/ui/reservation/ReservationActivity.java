@@ -1,9 +1,11 @@
 package com.example.myapplication.ui.reservation;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -13,26 +15,28 @@ import com.example.myapplication.databinding.ActivityReservationBinding;
 
 public class ReservationActivity extends AppCompatActivity {
 
-    private ActivityReservationBinding binding;
+    Button newReservation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
-        //Extract the views from this activity and display
 
-        Fragment firstFragment = new MyReservationFragment();
-        Fragment secondFragment = new NewReservationFragment();
-        Fragment thirdFragment = new FindColleagueFragment();
+        newReservation = (Button) findViewById(R.id.testbutton);
 
 
-
-
+        newReservation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new newReservationFragment());
+            }
+        });
     }
+    private void loadFragment(Fragment fragment){
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
 
-    @Override
-    public boolean onSupportNavigateUp(){
-        finish();
-        return true;
+        fragmentTransaction.replace(R.id.ReservationFragment, fragment);
+        fragmentTransaction.commit();
     }
 }

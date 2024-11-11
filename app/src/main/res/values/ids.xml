@@ -3,4 +3,6 @@
     <item name="textView4" type="id" />
     <item name="Building1start" type="id" />
     <item name="ReservationFragment" type="id" />
+    <item name="activity_reservation_view" type="id" />
+    <item name="new_reservation_view" type="id" />
 </resources>
