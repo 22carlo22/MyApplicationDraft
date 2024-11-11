@@ -21,6 +21,13 @@ public class ReservationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reservation);
         //Extract the views from this activity and display
 
+        Fragment firstFragment = new MyReservationFragment();
+        Fragment secondFragment = new NewReservationFragment();
+        Fragment thirdFragment = new FindColleagueFragment();
+
+
+
+
     }
 
     @Override

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="textView4" type="id" />
+    <item name="Building1start" type="id" />
+    <item name="ReservationFragment" type="id" />
 </resources>
