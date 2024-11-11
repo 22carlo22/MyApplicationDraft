@@ -27,6 +27,8 @@ public class MyReservationFragment extends Fragment {
         binding = FragmentMyReservationBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
+
         return root;
     }
 
