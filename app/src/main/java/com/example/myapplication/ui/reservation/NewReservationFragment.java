@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentNewReservationBinding;
 
 public class NewReservationFragment extends Fragment {
@@ -19,13 +20,18 @@ public class NewReservationFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //Extract the views from this fragment and display it
         binding = FragmentNewReservationBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        binding.Building1start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Display the other fragment or activity
 
+            }
+        });
 
 
 
